@@ -1,61 +1,188 @@
-# 🚀 Getting started with Strapi
+# 🍽️ Servd – AI Recipe Platform
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+Servd is a modern **AI-powered recipe platform** that allows users to discover, generate, and manage recipes easily.
+The platform provides a clean user interface, secure authentication, and fast performance using modern web technologies.
 
-### `develop`
-
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
-
-```
-npm run develop
-# or
-yarn develop
-```
-
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+This project is built with **Next.js, Tailwind CSS, Clerk Authentication, Strapi CMS, and Neon PostgreSQL**.
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+# 🚀 Features
+
+* 🤖 AI-powered recipe recommendations
+* 🔐 Secure authentication using Clerk
+* 📋 Browse and manage recipes
+* ⚡ Fast frontend using Next.js
+* 🎨 Modern UI with Tailwind CSS & ShadCN UI
+* 🗄️ Backend content management with Strapi
+* ☁️ Cloud database using Neon PostgreSQL
+
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+
+* Next.js
+* React
+* Tailwind CSS
+* ShadCN UI
+
+### Authentication
+
+* Clerk
+
+### Backend
+
+* Strapi (Headless CMS)
+
+### Database
+
+* Neon PostgreSQL
+
+---
+
+# 📂 Project Structure
+
+```
+ai-recipe-platform
+│
+├── frontend
+│   ├── app
+│   ├── components
+│   ├── utils
+│   └── styles
+│
+├── backend
+│   ├── strapi
+│   └── api
+│
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone the Repository
+
+```
+git clone https://github.com/your-username/ai-recipe-platform.git
+```
+
+## 2️⃣ Navigate to the Project
+
+```
+cd ai-recipe-platform
+```
+
+---
+
+# ▶️ Run the Frontend
+
+Install dependencies:
+
+```
+npm install
+```
+
+Run development server:
+
+```
+npm run dev
+```
+
+Open in browser:
+
+```
+http://localhost:3000
+```
+
+---
+
+# ⚙️ Run the Strapi Backend
+
+Navigate to backend folder:
+
+```
+cd backend
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Start Strapi development server:
+
+```
+npm run develop
+```
+
+Other useful commands:
+
+Start production server:
+
+```
+npm run start
+```
+
+Build admin panel:
+
+```
+npm run build
+```
+
+---
+
+# 🔐 Environment Variables
+
+Create a `.env.local` file in the root directory.
+
+Example:
+
+```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+CLERK_SECRET_KEY=your_secret_key
+DATABASE_URL=your_neon_database_url
+NEXT_PUBLIC_STRAPI_API_URL=http://localhost:1337
+```
+
+---
+
+# 📸 Screenshots
+
+You can add screenshots of your project UI here.
+
+Example:
+
+```
+/screenshots/homepage.png
+/screenshots/dashboard.png
+```
+
+---
+
+# 📌 Future Improvements
+
+* AI recipe generation using OpenAI
+* Recipe recommendation system
+* User profile customization
+* Save favorite recipes
+* Mobile responsive improvements
+
+---
+
+# 👨‍💻 Author
+
+**Poloji Vignesh**
+
+GitHub:
+https://github.com/your-github-vigneshpoloji
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
